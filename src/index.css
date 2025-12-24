@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-soara-400: #369bff;
+  --color-soara-800: #0050a7;
+  --color-sky: #00d4ff;
+  --color-gray-50: #f5f7fa;
+  --color-gray-900: #0a0a0a;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --font-size-largeTitle: 34px;
+  --font-size-body: 17px;
+  --radius-lg: 12px;
+  --radius-2xl: 20px;
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-soara: 0 10px 40px -10px rgba(54, 155, 255, 0.3);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+  --easing-apple: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro JP", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+}
+
+.bg-grid-soft {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(62, 74, 99, 0.16) 1px,
+    transparent 0
+  );
+  background-size: 18px 18px;
+}

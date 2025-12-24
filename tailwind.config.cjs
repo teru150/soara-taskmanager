@@ -1,0 +1,123 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        soara: {
+          50: "#e6f4ff",
+          100: "#b3deff",
+          200: "#80c8ff",
+          300: "#4db3ff",
+          400: "#369bff",
+          500: "#1a8cff",
+          600: "#0076e6",
+          700: "#0060cc",
+          800: "#0050a7",
+          900: "#003d80",
+        },
+        sky: {
+          DEFAULT: "#00d4ff",
+          light: "#33ddff",
+          dark: "#00a8cc",
+        },
+        gray: {
+          50: "#f5f7fa",
+          100: "#ebeef3",
+          200: "#d4dae5",
+          300: "#b0bbd0",
+          400: "#8b9dc3",
+          500: "#6b7fa3",
+          600: "#556484",
+          700: "#3e4a63",
+          800: "#1a2332",
+          900: "#0a0a0a",
+        },
+        blue: "#007AFF",
+        green: "#34C759",
+        yellow: "#FFCC00",
+        red: "#FF3B30",
+        purple: "#AF52DE",
+      },
+      backgroundImage: {
+        "gradient-soara": "linear-gradient(135deg, #369bff 0%, #0050a7 100%)",
+        "gradient-sky": "linear-gradient(135deg, #00d4ff 0%, #369bff 100%)",
+        "gradient-hero":
+          "linear-gradient(180deg, rgba(54, 155, 255, 0.9) 0%, rgba(0, 80, 167, 0.95) 100%)",
+        "grid-soft":
+          "radial-gradient(circle at 1px 1px, rgba(62, 74, 99, 0.16) 1px, transparent 0)",
+      },
+      fontFamily: {
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"SF Pro JP"',
+          '"Hiragino Sans"',
+          '"Hiragino Kaku Gothic ProN"',
+          '"Noto Sans JP"',
+          "sans-serif",
+        ],
+        mono: ['"SF Mono"', "Menlo", "Monaco", "Consolas", "monospace"],
+      },
+      fontSize: {
+        largeTitle: ["34px", { lineHeight: "41px", letterSpacing: "0.37px", fontWeight: "700" }],
+        title1: ["28px", { lineHeight: "34px", letterSpacing: "0.36px", fontWeight: "700" }],
+        title2: ["22px", { lineHeight: "28px", letterSpacing: "0.35px", fontWeight: "600" }],
+        title3: ["20px", { lineHeight: "25px", letterSpacing: "0.38px", fontWeight: "600" }],
+        headline: ["17px", { lineHeight: "22px", letterSpacing: "-0.43px", fontWeight: "600" }],
+        body: ["17px", { lineHeight: "22px", letterSpacing: "-0.43px", fontWeight: "400" }],
+        callout: ["16px", { lineHeight: "21px", letterSpacing: "-0.32px", fontWeight: "400" }],
+        subheadline: ["15px", { lineHeight: "20px", letterSpacing: "-0.24px", fontWeight: "400" }],
+        footnote: ["13px", { lineHeight: "18px", letterSpacing: "-0.08px", fontWeight: "400" }],
+        caption1: ["12px", { lineHeight: "16px", letterSpacing: "0px", fontWeight: "400" }],
+        caption2: ["11px", { lineHeight: "13px", letterSpacing: "0.07px", fontWeight: "400" }],
+      },
+      borderRadius: {
+        xs: "4px",
+        sm: "6px",
+        DEFAULT: "8px",
+        md: "10px",
+        lg: "12px",
+        xl: "16px",
+        "2xl": "20px",
+        "3xl": "24px",
+        "4xl": "32px",
+      },
+      boxShadow: {
+        xs: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+        sm: "0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+        DEFAULT:
+          "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        md:
+          "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        lg:
+          "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+        xl: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        "2xl": "0 50px 100px -20px rgba(0, 0, 0, 0.25)",
+        soara: "0 10px 40px -10px rgba(54, 155, 255, 0.3)",
+        sky: "0 10px 40px -10px rgba(0, 212, 255, 0.3)",
+      },
+      transitionTimingFunction: {
+        apple: "cubic-bezier(0.25, 0.1, 0.25, 1)",
+        "apple-in": "cubic-bezier(0.42, 0, 1, 1)",
+        "apple-out": "cubic-bezier(0, 0, 0.58, 1)",
+        "apple-in-out": "cubic-bezier(0.42, 0, 0.58, 1)",
+      },
+      transitionDuration: {
+        150: "150ms",
+        250: "250ms",
+        350: "350ms",
+        600: "600ms",
+      },
+      screens: {
+        xs: "375px",
+        sm: "390px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+    },
+  },
+  plugins: [],
+};

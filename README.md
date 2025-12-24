@@ -1,2 +1,6 @@
 # soara-taskmanager
-this is an app to manage the tasks in the team soara
+SOARA task management UI prototype built with React, TypeScript, and Tailwind.
+
+## Setup
+1. `npm install`
+2. `npm run dev`
